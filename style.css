@@ -1,0 +1,476 @@
+/*Itens gerais*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #212529;
+}
+
+.container-index {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 980px;
+}
+
+.titulo h2 {
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    letter-spacing: 2px;
+}
+
+.titulo h2::after {
+    content: '';
+    border: 1px solid white;
+    width: 40px;
+    margin: 10px auto;
+    display: block;
+}
+
+/*Fim intens gerais*/
+
+
+
+/*Menu*/
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu h1 {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 35px;
+}
+
+.menu h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li {
+    display: inline-block;
+    margin-left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+/*Fim menu*/
+
+/*Introducao*/
+
+.introducao {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 180px;
+}
+
+.introducao h2 {
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: white;
+}
+
+/*Fim introducao*/
+
+/*Portfolio*/
+
+.itens-portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+
+.conteudo-portfolio img {
+    width: 220px;
+    height: 250px;
+    background: #000;
+    border: 2px solid white;
+    margin: 10px;
+    display: flex;
+    border-radius: 4px;
+}
+
+/*Fim portfolio*/
+
+/*Sobre*/
+.itens-sobre {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.texto-sobre {
+    width: 400px;
+}
+
+.texto-sobre h2 {
+    font-size: 20px;
+}
+
+.texto-sobre p {
+    color: white;
+    font-size: 30px;
+    line-height: 45px;
+    border-right: 3px solid white;
+    padding-right: 30px;
+}
+
+.sobre-skills h2 {
+    font-size: 20px;
+}
+
+.sobre-skills ul {
+    width: 400px;
+}
+
+.sobre-skills ul li {
+    font-size: 30px;
+    line-height: 45px;
+    list-style: none;
+    margin-left: 40px;
+    color: white;
+}
+/*Fim sobre*/
+
+/*Contato*/
+.container-contato {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.container-contato h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.contato-msg {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    border-right: 3px solid white;
+}
+
+.contato-dados {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-msg input {
+    width: 350px;
+    height: 50px;
+    margin-bottom: 30px;
+    background: none;
+    border: 3px solid white;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+.contato-msg input:nth-child(4) {
+    width: 100px;
+    font-weight: bold;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.contato-msg textarea {
+    border: 3px solid white;
+    margin-bottom: 30px;
+    background: none;
+    width: 350px;
+    height: 200px;
+    font-size: 15px;
+    color: white;
+}
+
+.contato-msg input::placeholder {
+    color: white;
+}
+
+.contato-dados span {
+    margin-left: 45px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contato-dados span a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 40px;
+    border-top: 3px solid white;
+}
+
+.footer span {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footer a {
+    margin-left: 30px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+/*Responsividade 1440px*/
+@media(max-width: 1400px) {
+    .container-index {
+        max-width: 960px;
+    }
+}
+
+/*Responsividade 1366px*/
+@media(max-width: 1367px) {
+    .imagem-2 {
+        display: none;
+    }
+
+    .container {
+        max-width: 780px;
+    }
+
+    .conteudo-portfolio img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .texto-sobre p {
+        font-size: 20px;
+    }
+
+    .sobre-skills ul li {
+        font-size: 20px;
+    }
+
+    .button-portfolio {
+        display: none;
+    }
+
+    .button-sobre {
+        display: none;
+    }
+
+    .button-contato {
+        display: none;
+    }
+}
+
+/*Responsividade 980px*/
+@media(max-width:980px) {
+    .container-index {
+        max-width: 800px;
+    }
+
+    .conteudo-portfolio img {
+        height: 170px;
+        width: 170px;
+    }
+
+    .button-portfolio {
+        display: none;
+    }
+
+    .button-sobre {
+        display: none;
+    }
+
+    .texto-sobre p {
+        font-size: 20px;
+    }
+
+    .sobre-skills ul li {
+        font-size: 20px;
+    }
+
+    .button-contato {
+        display: none;
+    }
+}
+
+/*Responsividade 840px*/
+@media(max-width: 840px) {
+    .conteudo-portfolio img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .imagem-2 {
+        display: none;
+    }
+}
+
+/*Responsividade Mobile*/
+
+@media(max-width: 730px) {
+    .index {
+        height: 500px;
+    }
+
+    .menu h1 {
+        margin-left: 20px;
+    }
+
+    .imagem-2 img {
+        display: none;
+    }
+
+    .introducao {
+        margin-top: 70px;
+        justify-content: center;
+    }
+
+    .introducao h2 {
+        font-size: 30px;
+        letter-spacing: 3px;
+    }
+
+    .introducao img {
+        display: none;
+    }
+
+    .button-portfolio {
+        display: none;
+    }
+
+    /*Portfolio*/
+    .portfolio {
+        height: 400px;
+    }
+
+    .conteudo-portfolio {
+        margin-top: 10px;
+    }
+
+    .conteudo-portfolio img {
+        height: 95px;
+        width: 95px;
+    }
+
+    .button-sobre {
+        display: none;
+    }
+
+    /*Sobre*/
+
+    .sobre {
+        height: 600px;
+    }
+
+    .itens-sobre {
+        margin-top: 10px;
+    }
+
+    .texto-sobre {
+        width: 200px;
+    }
+
+    .sobre-skills ul {
+        width: 200px;
+    }
+
+    .texto-sobre p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .sobre-skills ul li {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .button-contato {
+        display: none;
+    }
+
+
+    /*contato*/
+    .contato {
+        height: 1010px;
+    }
+
+    .container-contato {
+        margin-top: 10px;
+        flex-direction: column;
+    }
+
+    .contato-msg {
+        width: 200px;
+        border-right: none;
+        margin: 0 auto;
+    }
+
+    .contato-dados {
+        width: 230px;
+        margin: 0 auto;
+    }
+
+    .contato-dados span {
+        line-height: 25px;
+        margin: 0 auto;
+    }
+
+    .contato-msg input {
+        width: 200px;
+    }
+
+    .contato-msg textarea {
+        width: 200px;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+
+    .footer a {
+       margin-right: 20px;
+    }
+
+}
+
+/*Animacoes*/
+.js-scroll {
+    opacity: 0;
+    transition: .8s;
+    transform: translate3d(0, -40px, 0);
+}
+
+.js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
